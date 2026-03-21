@@ -2,7 +2,6 @@ import Static.*;
 import abstraction.Animal;
 import abstraction.Circle;
 import abstraction.Lion;
-import abstraction.Shape;
 import inheritance.*;
 import javanestedclasses.Computer;
 
@@ -97,10 +96,13 @@ public class Main {
 
 //        Animal lion = new Lion();
 //        lion.sound();
+//
+//        Shape shape = new Circle(4);
+//        System.out.println(shape.calculateArea());
+//        System.out.println(shape.calculatePerimeter());
 
-        Shape shape = new Circle(4);
-        System.out.println(shape.calculateArea());
-        System.out.println(shape.calculatePerimeter());
+        Rectangle rectangle = new Rectangle(3,4);
+        System.out.println(rectangle.getArea());
     }
 
 }
