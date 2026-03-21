@@ -1,12 +1,4 @@
-import constructor.Cat;
-import constructor.Book;
-import constructor.Student;
-import javaOOPs.Dog;
-import javaOOPs.Person;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import Static.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -63,5 +55,20 @@ public class Main {
 //        Student stu = new Student();
 //        System.out.println(stu.getStudentName());
 //        System.out.println(stu.getStudentId());
+//
+//        Counter c1 = new Counter();
+//        Counter c2 = new Counter();
+//        Counter c3 = new Counter();
+
+//        System.out.println(Counter.getCount());
+
+//        System.out.println(MathUtility.add(2,5));
+//        System.out.println("Before creating instance: "+Initializer.initialVal);
+//        Initializer initializer = new Initializer();
+//        System.out.println("After creating instance: "+ Initializer.initialVal);
+
+
+//        System.out.println(Constants.areaOfCircle(2));
+        System.out.println(Configuration.configValue);
     }
 }
