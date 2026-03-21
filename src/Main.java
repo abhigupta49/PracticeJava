@@ -1,4 +1,6 @@
 import Static.*;
+import inheritance.*;
+import javanestedclasses.Computer;
 
 public class Main {
     public static void main(String[] args) {
@@ -69,6 +71,27 @@ public class Main {
 
 
 //        System.out.println(Constants.areaOfCircle(2));
-        System.out.println(Configuration.configValue);
+//        System.out.println(Configuration.configValue);
+//        Computer computer = new Computer();
+//        computer.showProcessorDetails();
+
+//        Cat cat = new Cat();
+//        cat.makeSound();
+//        Car vehicle = new Car();
+//        vehicle.drive();
+
+//        Rectangle rectangle = new Rectangle(4,3);
+//        System.out.println(rectangle.getArea());
+
+//        HRmanager hRmanager = new HRmanager();
+//        hRmanager.addEmployee();
+
+        SavingsAccount savingsAccount = new SavingsAccount();
+        savingsAccount.deposit(160);
+        savingsAccount.withdrawCash(180);
+        System.out.println(savingsAccount.getBalance());
+
+
     }
+
 }
