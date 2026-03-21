@@ -1,4 +1,8 @@
 import Static.*;
+import abstraction.Animal;
+import abstraction.Circle;
+import abstraction.Lion;
+import abstraction.Shape;
 import inheritance.*;
 import javanestedclasses.Computer;
 
@@ -86,12 +90,17 @@ public class Main {
 //        HRmanager hRmanager = new HRmanager();
 //        hRmanager.addEmployee();
 
-        SavingsAccount savingsAccount = new SavingsAccount();
-        savingsAccount.deposit(160);
-        savingsAccount.withdrawCash(180);
-        System.out.println(savingsAccount.getBalance());
+//        SavingsAccount savingsAccount = new SavingsAccount();
+//        savingsAccount.deposit(160);
+//        savingsAccount.withdrawCash(180);
+//        System.out.println(savingsAccount.getBalance());
 
+//        Animal lion = new Lion();
+//        lion.sound();
 
+        Shape shape = new Circle(4);
+        System.out.println(shape.calculateArea());
+        System.out.println(shape.calculatePerimeter());
     }
 
 }
