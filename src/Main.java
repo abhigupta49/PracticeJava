@@ -4,6 +4,9 @@ import abstraction.Circle;
 import abstraction.Lion;
 import inheritance.*;
 import javanestedclasses.Computer;
+import polymorphism.Bicycle;
+import polymorphism.Cirlce;
+import polymorphism.Shape;
 
 public class Main {
     public static void main(String[] args) {
@@ -101,8 +104,20 @@ public class Main {
 //        System.out.println(shape.calculateArea());
 //        System.out.println(shape.calculatePerimeter());
 
-        Rectangle rectangle = new Rectangle(3,4);
-        System.out.println(rectangle.getArea());
+//        Rectangle rectangle = new Rectangle(3,4);
+//        System.out.println(rectangle.getArea());
+//        Bicycle bicycle = new Bicycle();
+//        bicycle.speedUp();
+//        System.out.println(bicycle.getSpeed());
+//        bicycle.speedUp();
+//        System.out.println(bicycle.getSpeed());
+//        bicycle.speedUp();
+//        System.out.println(bicycle.getSpeed());
+
+        Shape circle = new Cirlce(4);
+        System.out.println(circle.calculateArea());
+        circle.draw();
+
     }
 
 }
