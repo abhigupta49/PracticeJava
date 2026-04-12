@@ -1,12 +1,9 @@
-import Static.*;
-import abstraction.Animal;
-import abstraction.Circle;
-import abstraction.Lion;
-import inheritance.*;
-import javanestedclasses.Computer;
-import polymorphism.Bicycle;
-import polymorphism.Cirlce;
-import polymorphism.Shape;
+import customException.CustomArithmeticException;
+import customException.customOddnumberException;
+import exception.Question_1;
+import exception.Question_2;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -113,11 +110,73 @@ public class Main {
 //        System.out.println(bicycle.getSpeed());
 //        bicycle.speedUp();
 //        System.out.println(bicycle.getSpeed());
+//
+//        Shape circle = new Cirlce(4);
+//        System.out.println(circle.calculateArea());
+//        circle.draw();
 
-        Shape circle = new Cirlce(4);
-        System.out.println(circle.calculateArea());
-        circle.draw();
+//        ArrayList1 arrayList1 = new ArrayList1("pink");
+//        for(String str : arrayList1.getArrayList()){
+//            System.out.println(str);
+//        }
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("abhi");
+        arrayList.add("gupta");
+        arrayList.add("rahul");
+        arrayList.add("aman");
+        arrayList.add("amod");
+
+
+//        Iterate ArrayList Ele
+//        for(String str: arrayList){
+//            System.out.println(str);
+//        }
+
+//        Insert at First Position
+//        arrayList.add(0,"raj");
+//        System.out.println(arrayList.get(1));
+
+//        Reterive elements by index
+//        for(int i=0;i<arrayList.size();i++){
+//            System.out.println(arrayList.get(i));
+//        }
+
+//      Update array List Ellement
+//        arrayList.set(0,"ravi");
+//        for(String str: arrayList){
+//            System.out.println(str);
+//        }
+//        System.out.println(arrayList.get(0));
+
+//        Remove third element
+//        arrayList.remove(3);
+
+//        Search elements in arraylist
+//        if(arrayList.contains("gupta")){
+//            System.out.println("true");
+//        }
+
+//        Sort ArrayList
+
+//        Exception
+//        Question_1 question1 = new Question_1();
+//        try{
+//            System.out.println(question1.divideNum(5,0));
+//        } catch (CustomArithmeticException e) {
+//            System.out.println(e.getMessage());
+//        }
+
+        Question_2 question2 = new Question_2();
+        try {
+            System.out.println(question2.checkOdd(3));
+        } catch (customOddnumberException e) {
+            System.out.println(e.getMessage());
+        }
+
+
 
     }
+
 
 }
